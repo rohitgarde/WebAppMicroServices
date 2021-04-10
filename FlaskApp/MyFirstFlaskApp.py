@@ -8,12 +8,12 @@ def getreq():
 
 @app.route('/get', methods=['GET'])
 def get():
-    return ' Hello User, This is your Second Get Request.'
+    return ' Hello User, Your Get Request has been received in the Flask App.'
 
 @app.route('/post', methods=['POST'])
 def post():
     
-    return 'Hello User. Your Post request has been received.' 
+    return 'Hello User. Your Post request has been received in the Flask App.' 
   
 if __name__ == '__main__':
         #app.run(debug=True, port=8083) #run app on port 8080 in debug mode

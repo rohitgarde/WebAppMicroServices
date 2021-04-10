@@ -1,0 +1,7 @@
+FROM node:12.4-alpine
+WORKDIR /src
+COPY . .
+RUN npm i --quiet
+RUN npm install express
+EXPOSE 3002
+cmd node NodeApp/MyFirstNodeApp.js

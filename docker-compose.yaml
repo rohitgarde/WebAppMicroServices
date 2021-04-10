@@ -1,0 +1,16 @@
+version: "3"
+services:
+  flaskapp:
+    build: 
+      dockerfile: FlaskApp/DockerFile
+      context : .  
+    restart: always
+    ports: 
+      - "8085:8085"  
+  nodeapp:  
+    build: 
+      dockerfile: NodeApp/DockerFile
+      context : .  
+    restart: always
+    ports: 
+      - "3002:3002"

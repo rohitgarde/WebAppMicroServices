@@ -1,0 +1,8 @@
+FROM python:3.9-slim 
+
+RUN pip3 install flask
+
+WORKDIR /FlaskApp
+COPY . . 
+EXPOSE 8085
+CMD  python3 FlaskApp/MyFirstFlaskApp.py
